@@ -1,6 +1,8 @@
-package com.yxz.webutils.springbootwebutils.domain;
+package com.yxz.utils.springbootwebutils.domain;
 
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import java.util.Objects;
 
 /**
  * @Author： yuzx
@@ -146,5 +148,19 @@ public class ReqMappingBean {
 
     public void setMethodName(String methodName) {
         this.methodName = methodName;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof ReqMappingBean){
+            ReqMappingBean o = (ReqMappingBean) obj;
+            return o.getBex().equals(this.bex);
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.bex);
     }
 }

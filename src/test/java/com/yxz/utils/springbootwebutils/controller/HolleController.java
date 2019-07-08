@@ -1,6 +1,6 @@
-package com.yxz.webutils.springbootwebutils.controller;
+package com.yxz.utils.springbootwebutils.controller;
 
-import com.yxz.webutils.springbootwebutils.annotation.ReqMapping;
+import com.yxz.utils.springbootwebutils.annotation.ReqMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;

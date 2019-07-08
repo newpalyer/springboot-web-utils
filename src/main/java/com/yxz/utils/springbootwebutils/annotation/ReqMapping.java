@@ -1,4 +1,4 @@
-package com.yxz.webutils.springbootwebutils.annotation;
+package com.yxz.utils.springbootwebutils.annotation;
 
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.web.bind.annotation.RequestMapping;
