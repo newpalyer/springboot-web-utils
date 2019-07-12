@@ -2,6 +2,7 @@ package com.yxz.utils.springbootwebutils.domain;
 
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.util.Arrays;
 import java.util.Objects;
 
 /**
@@ -162,5 +163,25 @@ public class ReqMappingBean {
     @Override
     public int hashCode() {
         return Objects.hash(this.bex);
+    }
+
+    @Override
+    public String toString() {
+        return "ReqMappingBean{" +
+                "bex='" + bex + '\'' +
+                ", server='" + server + '\'' +
+                ", vaild=" + vaild +
+                ", name='" + name + '\'' +
+                ", className='" + className + '\'' +
+                ", methodName='" + methodName + '\'' +
+                ", value=" + Arrays.toString(value) +
+                ", fullValue=" + Arrays.toString(fullValue) +
+                ", method=" + Arrays.toString(method) +
+                ", path=" + Arrays.toString(path) +
+                ", params=" + Arrays.toString(params) +
+                ", headers=" + Arrays.toString(headers) +
+                ", consumes=" + Arrays.toString(consumes) +
+                ", produces=" + Arrays.toString(produces) +
+                '}';
     }
 }
