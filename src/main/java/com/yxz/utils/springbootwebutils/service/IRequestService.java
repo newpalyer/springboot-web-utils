@@ -1,7 +1,7 @@
-package com.yxz.webutils.springbootwebutils.service;
+package com.yxz.utils.springbootwebutils.service;
 
 
-import com.yxz.webutils.springbootwebutils.domain.ReqMappingBean;
+import com.yxz.utils.springbootwebutils.domain.ReqMappingBean;
 import java.util.Map;
 
 /**

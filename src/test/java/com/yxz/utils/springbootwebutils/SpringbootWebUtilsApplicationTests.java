@@ -1,7 +1,7 @@
-package com.yxz.webutils.springbootwebutils;
+package com.yxz.utils.springbootwebutils;
 
-import com.yxz.webutils.springbootwebutils.domain.ReqMappingBean;
-import com.yxz.webutils.springbootwebutils.service.IRequestService;
+import com.yxz.utils.springbootwebutils.domain.ReqMappingBean;
+import com.yxz.utils.springbootwebutils.service.IRequestService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

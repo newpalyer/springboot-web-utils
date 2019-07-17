@@ -1,8 +1,8 @@
-package com.yxz.webutils.springbootwebutils.service.impl;
+package com.yxz.utils.springbootwebutils.service.impl;
 
-import com.yxz.webutils.springbootwebutils.domain.ReqMappingBean;
-import com.yxz.webutils.springbootwebutils.annotation.ReqMapping;
-import com.yxz.webutils.springbootwebutils.service.IRequestService;
+import com.yxz.utils.springbootwebutils.domain.ReqMappingBean;
+import com.yxz.utils.springbootwebutils.annotation.ReqMapping;
+import com.yxz.utils.springbootwebutils.service.IRequestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.method.HandlerMethod;
@@ -11,9 +11,7 @@ import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
 import java.lang.reflect.Method;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**

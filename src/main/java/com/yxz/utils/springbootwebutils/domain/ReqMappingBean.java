@@ -1,6 +1,9 @@
-package com.yxz.webutils.springbootwebutils.domain;
+package com.yxz.utils.springbootwebutils.domain;
 
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import java.util.Arrays;
+import java.util.Objects;
 
 /**
  * @Author： yuzx
@@ -146,5 +149,39 @@ public class ReqMappingBean {
 
     public void setMethodName(String methodName) {
         this.methodName = methodName;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof ReqMappingBean){
+            ReqMappingBean o = (ReqMappingBean) obj;
+            return o.getBex().equals(this.bex);
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.bex);
+    }
+
+    @Override
+    public String toString() {
+        return "ReqMappingBean{" +
+                "bex='" + bex + '\'' +
+                ", server='" + server + '\'' +
+                ", vaild=" + vaild +
+                ", name='" + name + '\'' +
+                ", className='" + className + '\'' +
+                ", methodName='" + methodName + '\'' +
+                ", value=" + Arrays.toString(value) +
+                ", fullValue=" + Arrays.toString(fullValue) +
+                ", method=" + Arrays.toString(method) +
+                ", path=" + Arrays.toString(path) +
+                ", params=" + Arrays.toString(params) +
+                ", headers=" + Arrays.toString(headers) +
+                ", consumes=" + Arrays.toString(consumes) +
+                ", produces=" + Arrays.toString(produces) +
+                '}';
     }
 }

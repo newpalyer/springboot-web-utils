@@ -1,4 +1,4 @@
-package com.yxz.webutils.springbootwebutils;
+package com.yxz.utils.springbootwebutils;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

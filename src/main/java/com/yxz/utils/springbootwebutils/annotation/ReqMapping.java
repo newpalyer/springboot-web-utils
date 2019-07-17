@@ -1,4 +1,4 @@
-package com.yxz.webutils.springbootwebutils.annotation;
+package com.yxz.utils.springbootwebutils.annotation;
 
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,7 +25,7 @@ public @interface ReqMapping {
      * Alias for {@link RequestMapping#method}.
      */
     @AliasFor(annotation = RequestMapping.class)
-    RequestMethod[] method() default {};
+    RequestMethod[] method() default {RequestMethod.GET};
     /**
      * Alias for {@link RequestMapping#name}.
      */
