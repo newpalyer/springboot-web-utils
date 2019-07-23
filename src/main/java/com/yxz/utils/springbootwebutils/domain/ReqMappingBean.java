@@ -2,6 +2,7 @@ package com.yxz.utils.springbootwebutils.domain;
 
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -10,7 +11,8 @@ import java.util.Objects;
  * @Description:
  * @DateTime: Created in 2019/7/5 10:34
  */
-public class ReqMappingBean {
+public class ReqMappingBean implements Serializable {
+
     private String bex;
 
     private String server;
