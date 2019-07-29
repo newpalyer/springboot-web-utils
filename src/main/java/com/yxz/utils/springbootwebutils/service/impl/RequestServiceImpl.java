@@ -5,6 +5,7 @@ import com.yxz.utils.springbootwebutils.annotation.ReqMapping;
 import com.yxz.utils.springbootwebutils.service.IRequestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.Assert;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.mvc.condition.PatternsRequestCondition;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
@@ -47,6 +48,7 @@ public class RequestServiceImpl implements IRequestService {
                 reqMappingBean.setFullValue(p.getPatterns().toArray(new String[0]));
                 reqMappingBean.setClassName(method.getDeclaringClass().getName());
                 reqMappingBean.setMethodName(method.getName());
+                Assert.isTrue(res.containsKey(req.bex()),req.bex()+" is already exist!");
                 res.put(req.bex(),reqMappingBean);
             }
         });
